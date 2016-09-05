@@ -6,27 +6,43 @@
 </head>
 <body>
 
-<header>
+
+<Header><h1>Welcome to the Contact page.</h1></Header>
+
+<nav>
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
-</header>
+</nav>
 
 <form method="post">
     <h2>Ask your question</h2>
-    Type:
-    <select>
-        <option name="Type">Question</option>
-    </select>
-    <br/>
-    Name: <input type="text" name="Name"/>
-    <br/>
-    Question: <textarea name="Question" cols="50" rows="10"></textarea>
+    <div>
+        <label for="typeRolldown">Type:</label>
+        <select id="typeRolldown">
+            <option>Question</option>
+        </select>
+    </div>
+    <div>
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" name="name"/>
+    </div>
+    <div>
+        <label for="questionInput">Question:</label>
+        <textarea id="questionInput" name="Question" cols="35" rows="5"></textarea>
+    </div>
 
     <h2>How should i contact you</h2>
+    <div>
+        <label for="emailCheck">E-mail:</label>
+        <input id="emailCheck" type="checkbox">
+        <label for="telephoneCheck">Telephone:</label>
+        <input id="telephoneCheck" type="checkbox">
+    </div>
+    <button type="submit">Send</button>
 
 
 </form>
